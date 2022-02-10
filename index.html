@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			background-image: url(1.jpg);
+			background-size: cover;
+		}
+		@font-face {
+			font-family: kolya;
+			src : url(16847.ttf);
+		}
+		.text1 {
+			color: white;
+			font-family: kolya;
+			font-size: 100px;
+			margin: 0px
+		}
+		.os {
+			color: white;
+			font-family: kolya;
+			font-size: 100px;
+			margin: 0px
+		}
+		.img1 {
+			width: 100px;
+			position: absolute;
+			filter: blur(5px);
+			margin-top: 370px
+		}
+		.img2 {
+			width: 60px;
+			position: absolute;
+			filter: blur(2px);
+			margin-left: 1700px;
+			margin-top: 360px
+		}
+		.img3 {
+			width: 60px;
+			position: absolute;
+			filter: blur(1px);
+			margin-left: 1700px;
+			margin-top: 10px
+		}
+		.img4 {
+			width: 200px;
+			position: absolute;
+			filter: blur(1px);
+			margin-left: 450px;
+			margin-top: 10px
+		}
+		.img5 {
+			width: 300px;
+			position: absolute;
+			filter: blur(1px);
+			margin-left: 700px;
+			margin-top: 300px
+		}
+	</style>
+</head>
+<body>
+<h1 class="patrickText">патрик</h1>
+<h1 class="animeText">наруто</h1>
+<h1 class="titText">леви</h1>
+<h1 class="sfText">сф</h1>
+<h1 class="ghText">канеки</h1>
+<p class="os">предметов осталось:<span class="text1">5</span></p>
+<button class="shot">огонь</button>
+<img src="1.png" class="img1">
+<img src="4.png" class="img2">
+<img src="5.png" class="img3">
+<img src="7.png" class="img4">
+<img src="9.webp" class="img5">
+<script type="text/javascript">
+	let bullets;
+
+	bullets = 5;
+
+
+	
+	document.querySelector('.shot').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+	}
+
+	document.querySelector('.img1').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+		document.querySelector('.img1').style.display = 'none';
+		document.querySelector('.patrickText').style.textDecoration = 'line-through';
+	}
+	document.querySelector('.img2').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+		document.querySelector('.img2').style.display = 'none';
+		document.querySelector('.animeText').style.textDecoration = 'line-through';
+	}
+	document.querySelector('.img3').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+		document.querySelector('.img3').style.display = 'none';
+		document.querySelector('.titText').style.textDecoration = 'line-through';
+	}
+	document.querySelector('.img4').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+		document.querySelector('.img4').style.display = 'none';
+		document.querySelector('.sfText').style.textDecoration = 'line-through';
+	}
+	document.querySelector('.img5').onclick = function() {
+		bullets = bullets - 1;
+		console.log(bullets)
+		document.querySelector('.text1').innerHTML = bullets;
+		document.querySelector('.img5').style.display = 'none';
+		document.querySelector('.ghText').style.textDecoration = 'line-through';
+	}
+</script>
+</body>
+</html>
